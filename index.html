@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Horizontal</title>
+
+    <style>
+        /* Define a largura máxima do conteúdo */
+        .container {
+            width: 1200px;
+            margin: 0 auto; /* Centraliza o conteúdo */
+            padding: 20px; /* Adiciona um pouco de espaçamento interno */
+            margin-left: 80px; /* Adiciona espaço ao lado esquerdo da página */
+        }
+        /*estilo para cabeçalho*/
+        h1 {
+            background-color: black;
+            /*cor de fundo preto*/
+            color: white;
+            /*cor do texto branco*/
+            margin: 0px;
+            padding: 10px 20px;
+            text-align: right;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h3 {
+            background-color: gray;
+            /*cor de fundo preto*/
+            color: white;
+            /*cor do texto branco*/
+            margin: 0px;
+            padding: 10px;
+            text-align: right;
+        }
+
+        /* Estilo para a lista */
+        ul {
+            list-style-type: none;
+            /* Remove os marcadores da lista */
+            padding: 0;
+            /* Remove o preenchimento padrão */
+            margin: 0;
+            /* Remove a margem padrão */
+            background-color: rgb(95, 130, 204);
+            /* Fundo azul */
+            display: flex;
+            /* Alinha os itens horizontalmente */
+            justify-content: center;
+        }
+
+        /* Estilo para os itens da lista */
+        li {
+            margin: 0;
+            /* Remove a margem entre os itens */
+            padding: 10px 20px;
+            /* Espaçamento interno */
+            color: white;
+            /* Texto branco */
+        }
+
+        /* Estilo para os itens da lista quando o mouse passa por cima */
+        li:hover {
+            text-decoration: underline;
+            /* Sublinhado ao passar o mouse */
+
+        }
+
+        /* Estilo para links dentro dos itens da lista */
+        li a {
+            color: white;
+            /* Cor do texto dos links */
+            text-decoration: none;
+            /* Remove o sublinhado padrão dos links */
+        }
+
+        /* Estilo inicial para o parágrafo com a classe 'highlight' */
+        .highlight {
+            font-size: 24px;
+            /* Tamanho da fonte */
+            color: black;
+            /* Cor do texto */
+            margin: 20px;
+            /* Margem ao redor do parágrafo */
+            padding: 10px;
+            /* Espaçamento interno */
+            transition: letter-spacing 0.3s ease;
+            /* Transição suave para o espaçamento entre letras */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+
+        /* Efeito ao passar o mouse */
+        .highlight:hover {
+            letter-spacing: 5px;
+            /* Aumenta o espaçamento entre letras ao passar o mouse */
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            /* Margens automáticas para centralizar horizontalmente */
+            width: 30%;
+            /* Ajuste conforme necessário */
+            height: auto;
+            /* Manter a proporção */
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .highlight ul {
+            color: black;
+
+        }
+
+        .point-before {
+            display: block;
+            /* Faz cada item ocupar uma linha */
+            margin-bottom: 10px;
+            /* Espaçamento entre os itens */
+        }
+
+        .point-before::before {
+            content: "• ";
+            /* Adiciona um ponto antes do texto */
+            color: black;
+            /* Cor do ponto */
+            font-size: 1.2em;
+            /* Tamanho do ponto */
+            margin-right: 5px;
+            /* Espaço entre o ponto e o texto */
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+         /* Estilo para o link sublinhado */
+         .voltar-topo {
+            text-decoration: underline; /* Sublinha o texto */
+            color: blue; /* Cor do texto (opcional) */
+            display: block; /* Faz o link ocupar uma linha inteira (opcional) */
+            margin: 20px 0; /* Margem acima e abaixo do link (opcional) */
+            
+        }
+
+        /* Apenas para criar uma página longa para teste */
+        .container {
+            padding: 20px;
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+    <a id="topo"></a>
+
+    <h1>Tecnologias Web</h1>
+    <h3>Aprenda na prática</h3>
+    <ul>
+        <li><a href="#">Matrícule-se</a></li>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">Missão</a></li>
+        <li><a href="#">Localização</a></li>
+        <li><a href="#">Fale conosco</a></li>
+    </ul>
+    <p class="highlight">Conheças as tecnologias</p>
+
+    <span class="point-before"><a href="" id="HTML5">HTML5</a></span>
+    <span class="point-before"><a href="">CSS3</a></span>
+    <div>
+        <p><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. Laboriosam labore cumque inventore,
+            mollitia
+            aliquid, blanditiis corporis exercitationem doloremque accusantium voluptatum sunt quam dicta libero debitis
+            deleniti perferendis voluptates quia temporibus!
+            Eius, ducimus! Nam facilis reiciendis aliquam consectetur quaerat laboriosam illum laudantium perspiciatis
+            molestiae. Facilis beatae enim quae labore quaerat a debitis nostrum repellat? Ullam iste eveniet ex dolores
+            rem dicta.
+            Ea illum et, dolores neque molestiae quae, placeat earum beatae, quisquam quis laborum architecto rerum
+            cumque aut vel itaque dolorum vitae nostrum atque iusto? Officiis enim iure temporibus eveniet maxime?
+            Iste aut at minus optio nesciunt tempore qui laboriosam, tempora earum animi nostrum eum maiores fugit
+            asperiores sapiente natus commodi perferendis sunt placeat nisi doloremque explicabo. Dolorum ullam dolor
+            nisi?</p>
+    </div>
+    <img src="logo.png" alt="">
+    <p><u>Lorem ipsum dolor</u>, sit amet consectetur, adipisicing elit. Exercitationem, facilis voluptates atque
+        recusandae
+        modi possimus nihil dolore voluptas corrupti laborum ducimus animi natus reiciendis quibusdam neque at ratione
+        quis cupiditate.
+        Atque sapiente magnam vero! Perferendis voluptatem molestiae laboriosam dolores id consequatur. Provident
+        ducimus exercitationem neque, maiores, atque voluptatem quis rem vero maxime voluptas officia quidem cum
+        eligendi dolorem quia reprehenderit.
+        Iure doloremque a labore, magni tempora, error commodi dolore fugit pariatur qui provident, debitis impedit. Aut
+        corrupti fugit maxime sit hic nesciunt exercitationem voluptatem voluptatum velit dicta, ut eligendi atque.
+        Asperiores laborum illum quo. Magni eveniet a nemo, cupiditate laboriosam aspernatur vel porro sed voluptas,
+        laudantium omnis dolorum adipisci excepturi doloremque? Sit delectus similique iusto dignissimos odit hic
+        tempore numquam.
+        Quis esse dolore dicta odio omnis. Magnam voluptate magni vel libero saepe. Veritatis, doloremque!
+    </p>
+    <p><em>Lorem ipsum dolor</em> sit amet consectetur adipisicing elit. Dolore, non. Quis, voluptatum quia. Eum non
+        repellendus
+        commodi ullam magnam, quas sit aliquam sed dolorum placeat iure, reiciendis necessitatibus obcaecati tenetur?
+        Eius suscipit ducimus id, unde consequuntur fugiat provident obcaecati libero saepe accusantium fugit, cum
+        veritatis iure assumenda, architecto natus tempore. Neque harum odio at fugiat minus similique quo doloribus
+        qui?
+        Iusto earum molestias maxime alias recusandae mollitia necessitatibus! Vitae accusamus perferendis amet unde
+        obcaecati minus aliquid at aperiam quas nemo minima consequuntur asperiores esse odit, ea beatae laboriosam
+        similique. Earum.
+        Nemo quo alias, repellat quaerat quidem voluptatum animi explicabo optio quae enim deleniti aperiam iusto
+        adipisci distinctio id fugit inventore est esse excepturi praesentium quis vero. Similique architecto provident
+        commodi.</p>
+    <td>
+
+    </td>
+    <p><del>Lorem ipsum dolor</del> sit amet consectetur adipisicing elit. Adipisci totam perferendis reprehenderit
+        consequatur
+        natus distinctio nam cumque cupiditate itaque vero, unde consectetur mollitia nobis officiis amet quis maiores
+        veritatis eligendi?
+        Dolore, eaque debitis in, laborum placeat ab explicabo maiores quibusdam commodi autem ipsam, id quis
+        exercitationem officiis adipisci quam doloremque optio vel sapiente sed? Aspernatur nulla neque nam illo quidem!
+        Quod eveniet, harum inventore odio fugit cumque laborum a magni perferendis libero consequatur incidunt modi
+        ipsam facilis dolorum laudantium vitae exercitationem quis aspernatur animi ad corrupti neque ab! Quis, beatae.
+        Harum repellat quos quis placeat officia illo porro soluta vel quas consequatur quae rem consectetur explicabo
+        mollitia nesciunt, obcaecati quisquam id ullam eligendi molestiae delectus enim earum possimus? Natus, illo.
+        Consequatur numquam perspiciatis adipisci itaque unde eaque molestias quaerat facere perferendis iste quasi at
+        ad quisquam, officiis quis, accusantium dignissimos natus harum dolorum sit! Harum voluptates sunt iusto
+        officiis dignissimos.</p>
+    <p ><strong> <a href="#HTML5"></a>HTML5</strong></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia quo atque cupiditate rem hic aperiam
+        consectetur expedita sint, perferendis alias aut voluptas quos incidunt impedit deleniti eaque dolor libero?id
+        ullam eligendi molestiae delectus enim earum possimus? Natus, illo.</p>
+    <span class="point-before">Qualquer pessoa que deseja aprender HTML 1</span>
+    <span class="point-before">Qualquer pessoa que deseja aprender HTML 2</span>
+    <span class="point-before">Qualquer pessoa que deseja aprender HTML 3</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur ut fuga exercitationem, repellendus
+        ipsa autem molestiae qui corrupti repudiandae similique alias voluptates, quae quo est sequi tempora deserunt
+        blanditiis.
+        Corrupti ex suscipit nostrum esse commodi modi. Eius enim est doloremque a nisi cupiditate reprehenderit ipsum
+        quo dolore, error culpa deleniti quas odit eligendi labore perspiciatis excepturi expedita illum dolorem.
+        Iure nisi, tenetur velit nostrum eius consequatur at minima fuga ducimus quo similique, molestias maiores
+        temporibus pariatur placeat deserunt aut dolorem expedita mollitia saepe exercitationem dolore, ipsum officia
+        repellendus. Quia pariatur placeat deserunt aut dolorem expedita mollitia saepe exercitationem dolore, ipsum officia
+        repellendus. Quia!!</p>
+       
+   
+        <!-- Link para voltar ao topo -->
+        <a href="#topo" class="voltar-topo">[voltar ao topo]</a>
+    </div>
+
+</body>
+
+</html>
